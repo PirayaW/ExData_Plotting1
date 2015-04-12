@@ -17,7 +17,7 @@ data$DateTime <- as.POSIXct(strptime(paste(data$Date, data$Time, sep = " "),
                                      "%Y-%m-%d %H:%M:%S"))
 
 # plot as png
-png("plot2.png", width = 480, height = 480)
+png("plot2.png", width = 480, height = 480, bg = "transparent")
 plot(x = data$DateTime, 
      y = data$Global_active_power, 
      type = "l",

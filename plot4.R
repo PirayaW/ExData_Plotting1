@@ -17,7 +17,7 @@ data$DateTime <- as.POSIXct(strptime(paste(data$Date, data$Time, sep = " "),
                                      "%Y-%m-%d %H:%M:%S"))
 
 # plot as png
-png("plot4.png", width = 480, height = 480)
+png("plot4.png", width = 480, height = 480, bg = "transparent")
 
 # multiple plots: 2x2, fills by rows
 par(mfrow=c(2,2))

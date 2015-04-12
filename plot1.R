@@ -12,7 +12,7 @@ data <- subset(data,
                    data$Date <= as.Date("2007-02-02"))
 
 # plot as png
-png("plot1.png", width = 480, height = 480)
+png("plot1.png", width = 480, height = 480, bg = "transparent")
 hist(data$Global_active_power, 
      col = "red",
      main = "Global Active Power",
